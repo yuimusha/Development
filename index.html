@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Source+Serif+Pro:400,600,700');</style>
+  </head>
+
+  <body>
+    <header>
+        <h1>Development</h1>
+    </header>
+    <main>
+        <section id ="intro">
+            <h2>Project Introduction</h2>
+            <p>In this project, the goal was to make an interface for users to select items out of a list, which then aggregates them using React. The project can be divided into two parts. The first section involves conducting a competitive analysis of existing websites to understand how organizations design interfaces to organize and aggregate information. The second section entails implementing the React app based on insights gained from the competitive analysis.The decision was made to develop the React app as a music platform, enabling users to sort, filter, and add songs to their personal lists.</p>
+        </section>
+        <section id ="competitive-analysis">
+            <h2>Competitive Analysis of Websites</h2>
+            <p>In order to have a better idea of what features in a website would successfully organize information that is pertinent to the user, 
+                three different websites with a favoriting funtion were selected to perform a competitive analysis. With the intention to create
+                a music website, two of the three websites chosen for the analysis were music related (Spotify and Apple Music), and the third website
+                was a website unrelated to music (GoodReads) in order to gain a wider range for inspiration and contrast. The competitive comparison chart
+                below shows the factors related to the favoriting function, and whether each of the website has the factor. 
+            </p>
+            <h4>Competitive Comparison Chart:</h4>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th><a href="https://open.spotify.com/">Spotify</a></th>
+                    <th><a href="https://music.apple.com/us/browse">Apple Music</a></th>
+                    <th><a href="https://www.goodreads.com/review/list/177668341?ref=nav_mybooks">GoodReads</a></th>
+                </tr>
+                <tr>
+                    <td>Sort by Recently Added</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                </tr>
+                <tr>
+                    <td>Sort by Recently Played/Read</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                </tr>
+                <tr>
+                    <td>Sort by Playlist Name (alphabetically)</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                    <td>&#x274c;</td>
+                </tr>
+                <tr>
+                    <td>Sort by Title, Author/Artist (alphabetically)</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                    <td>&#x2713;</td>
+                </tr>
+                <tr>
+                    <td>Sort by Album Name (alphabetically)</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                </tr>
+                <tr>
+                    <td>Sort by Genre (alphabetically)</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                </tr>
+                <tr>
+                    <td>Sort by Creator</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                    <td>&#x274c;</td>
+                </tr>
+                <tr>
+                    <td>Sort by Length</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                    <td>&#x2713;</td>
+                </tr>
+                <tr>
+                    <td>Filter by Playlists/Shelves</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                </tr>
+                <tr>
+                    <td>Filter by Albums</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                    <td>&#x274c;</td>
+                </tr>
+                <tr>
+                    <td>Filter by Artists/Author</td>
+                    <td>&#x2713;</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                </tr>
+                <tr>
+                    <td>Filter by Favorites</td>
+                    <td>&#x274c;</td>
+                    <td>&#x2713;</td>
+                    <td>&#x274c;</td>
+                </tr>
+            </table>
+            <p>There were features that were more successful than others for each of the three websites. For Spotify, the sorting by recently played may be the most successful feature. To follow a well designed visual hierarchy, important information should be at the top of the screen. Intuitively, users are more likely to listen to songs that they listened to recently than songs that they listened to in the past.  Therefore, having the  most recently played playlist at the top of the screen would perhaps be most successful. On the other hand, filtering by album may be the least successful feature. This is because the playlist contains all the songs that a user likes, while an album may not contain all the songs that a user likes. It is more likely that a user would want to listen to the songs in the playlist because those are the songs that they chose for themselves. Therefore, filtering by playlist may be more used than filtering by albums. In other words, this feature may not be used as much as the other features. 
+                For Apple Music, sorting by length may have been the most successful feature. This is because the addition of this feature may have the most effect on user control in this website/app. More specifically, while the title and artist of the song can be searched in the search function of the website, which could perhaps be a faster way of accessing a specific song based on title/artist than by sorting, a song cannot be searched based on its length in the search function. Therefore, the feature that sorts songs by their length adds an additional control for users. On the other hand, sorting by genre may not be the most successful feature here. This is because the users would have to scroll to the bottom of the list of all songs to get an idea of what genres there are, and this would be less efficient than if the songs are filtered by genre. 
+                For GoodReads, sorting by length may be the most successful feature for the same reason mentioned for Apple Music. In addition, it may be that this feature would be more useful for this particular website because users may want to search for books that are suitable to read in a specific period of time. On the other hand, the least successful feature may be the sorting by recently read. This is because it is most likely that the user would enter the review and the date they finished reading the book at the same time, and intuitively it is unlikely that a user would reread a book in a short period of time, unlike for songs.
+                </p>
+            <h4>List of features that I will attempt to implement:</h4>
+            <ul>
+                <li>Filtering by genre</li>
+                <li>Filtering by artist</li>
+                <li>Sorting by length</li>
+                <li>Aggregating liked elements</li>
+            </ul>
+        </section>
+        <section id ="implementation">
+            <h2>Implementation</h2>
+            <p>This <a href="https://react-eta-smoky.vercel.app/">react app</a> allows the user to easily look for songs by filtering and sorting, as well as add songs they like to their own list.
+            More specifically, users can filter songs by genre and artist, and sort songs by length. The filter and sort function can work in combination, and both the filter and sorts 
+            can be cancelled by clicking on a button. The user can add a song to their list as well as remove a song from their list. A song can be added to their list only once, and after they clicked
+            on the "Add to My List" button for a particular song, this button would change into a "Remove from My List" button.</p>
+            <p>The zip file of the code for this react app can be accessed <a href="https://drive.google.com/file/d/1P2VlmvxjwVIIgFBATKa8hhVJv7w_lk7T/view?usp=drive_link">here</a>. The github page of the React app can be accessed <a href="https://github.com/yuimusha/react.git">here</a>.</p>
+            <img src="images/react-app.png" alt="images of react app" />
+        </section>
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Through the process, I gained proficiency in discerning the nuanced intricacies of design elements utilized by industry-leading designers, allowing me to effectively recognize both the subtleties that elevate user experience and the shortcomings that hinder it. Additionally, I acquired experience in implementing a reactive framework for frontend development, to create responsive and interactive user interfaces that adapt to varying user interactions by using interface components and tying the components to an internal data state.</p>
+        </section>
+    </main>
+  </body>
+</html>

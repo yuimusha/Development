@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px; /* Avoid content touching the bottom */
+}
+  
+header {
+    background-color: #CCD5FF;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #C884A6;
+}
+a {
+    color: blue;
+}
+img{
+    width: 100%;
+
+}
+
+th, td {
+    padding-top: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+td{
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
